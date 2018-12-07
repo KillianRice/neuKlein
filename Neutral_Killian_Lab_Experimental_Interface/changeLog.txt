@@ -1,0 +1,11 @@
+Record changes to the neuKLEIN program with the following format
+Date - <person modifying> - note about change
+
+
+2015.10.01 - Jim Aman - Swithced the Neutral labview codebase to Labview 2015 and began using the code developed by Joe Whalen for the Rydberg lab
+2015.12.10 - Jim Aman - Modified the Agilent programming settings to allow for dynamic control over the horizontal trim fields. This involved adding a stop condition to the end of the Pulseblaster cycle since the Agilent is so slow to program. 
+2016.01.18 - Jim Aman - Added the "Green Lattice Final Voltage" item to the scan list
+2016.02.02 - Jim Aman - Enlarged the Agilent settings control to program all three channels so it can control all trim fields
+2016.08.10 - Jim Aman - Modified the 6221 (ODT) waveform VI to allow for calculated values to update the inputs. This was done to try and show the user all the relevant quantities when determining a trajectory. Only values that do not modify the trajectory will are modified on the input. Also added notes about the functions of each formula for the 6221 controls.
+2017.02.23 - Jim Aman - Moved the neuKLEIN interface to Cadmium for controllnig the neutral experiment. Updated the Legacy pulseblaster VIs to work with the updated spinAPI (latest known version to work is located on the Drobo)
+2018.02.28 - Jim Aman - Built a new pulseblaster control and changed the structure to allow us to control two pulseblasters. Also implemented the FPGA program as a standalone project that can take digital signals from the pulseblasters. 

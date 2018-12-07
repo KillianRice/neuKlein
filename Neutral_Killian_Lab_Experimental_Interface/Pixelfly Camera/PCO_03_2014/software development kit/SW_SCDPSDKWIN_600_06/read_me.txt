@@ -1,0 +1,161 @@
+-------------------------------------------------------------------
+ P C O  AG    -    TECHNICAL  INFORMATION  DOCUMENT
+-------------------------------------------------------------------
+
+README FOR SOFTWARE/VERSION:  
+SDK Release 6.00_06
+
+FOR PCO PRODUCT/VERSION:
+Sensicam, Dicam Pro, HSFC-Pro
+
+DESCRIPTION:
+This packages includes an setup, which installs the SDK-files
+in your system in the standard directory.
+
+CONTENTS:
+
+Archive File Name: SW_SCDPSDKWIN_600_06.exe
+
+Files Included                     Size           Date          Time
+.\:
+READ_ME			TXT	this file!		
+
+bin:
+PCO_CDLG		DLL	 1103872	08.01.2013	14:29
+PCO_CONV		DLL	  978944	08.01.2013	14:29
+PCO_CRYPTDLL		DLL	  172544	18.12.2012	13:12
+PCOTEST_CVDLG		EXE	 2286592	27.03.2013	08:51
+SENCAM_TEST		EXE	 1902080	27.03.2013	08:39
+TEST			TIF	 3008702	15.12.2010	09:35
+
+bin64:
+PCO_CDLG		DLL	 1216000	08.01.2013	14:29
+PCO_CONV		DLL	 1007104	08.01.2013	14:29
+PCO_CRYPTDLL		DLL	  190976	18.12.2012	13:12
+PCOTEST_CVDLG		EXE	 3035136	27.03.2013	08:51
+SENCAM_TEST		EXE	 2432000	27.03.2013	08:40
+TEST			TIF	 3008702	15.12.2010	09:35
+
+doc:
+MA_SCDPSDKWINE_600	PDF	  536943	28.11.2011	09:45
+MA_SDKCNVWINE_119	PDF	  216525	20.05.2011	12:23
+
+include:
+CAM_TYPES		H	    3904	08.06.2011	10:38
+CCD_TYPES		H	    4183	08.06.2011	11:19
+LOGLEVEL		H	    2905	10.03.2011	18:22
+PCO_CONVDLGEXPORT	H	    4550	30.11.2010	10:46
+PCO_CONVEXPORT		H	    6630	30.11.2010	10:46
+PCO_CONVSTRUCTURES	H	    9222	20.09.2010	09:56
+PCO_ERR			H	   36905	23.11.2011	15:38
+PCO_ERRT		H	   35497	23.11.2011	15:38
+PCO_STRUCTURES		H	    2542	20.09.2010	09:56
+SC_SDKSTRUCTURES	H	    9335	03.08.2011	10:59
+SENCAM_DEF		H	    5422	14.03.2011	10:28
+SENCAMEXPORT		H	   17228	10.06.2011	10:57
+
+lib_win32:
+PCO_CDLG		LIB	    3070	23.11.2011	12:47
+PCO_CONV		LIB	    6080	23.11.2011	12:45
+SEN_CAM			LIB	   11652	10.06.2011	16:05
+
+lib_x64:
+PCO_CDLG		LIB	    2946	23.11.2011	12:47
+PCO_CONV		LIB	    5420	23.11.2011	12:45
+SEN_CAM			LIB	   11014	10.06.2011	16:04
+
+
+sample/sencam_test:
+DEBUG			BAT	      48	24.11.2011	09:58
+FILE12			CPP	   61251	21.12.2009	12:28
+FILE12			H	     932	05.10.2009	10:28
+RELEASE			BAT	     226	24.11.2011	10:30
+RESOURCE		H	     409	18.03.2011	10:06
+SENCAM_TEST		CPP	   33050	27.03.2013	08:38
+SENCAM_TEST		H	      39	18.03.2011	10:06
+SENCAM_TEST		RC	    2925	27.04.2011	11:05
+SENCAM_TEST		SLN	    1241	27.03.2013	08:30
+SENCAM_TEST		VCPROJ	    9202	27.03.2013	08:40
+STDAFX			CPP	     298	18.03.2011	10:06
+STDAFX			H	    1130	27.03.2013	08:38
+TARGETVER		H	    1428	18.03.2011	11:36
+VERSIONNO		H	     298	24.11.2011	09:27
+
+sample/Test_cvDialog:
+CHILDVIEW		CPP	    2479	14.12.2010	15:11
+CHILDVIEW		H	     785	15.12.2010	09:33
+FILE12			CPP	   29418	14.12.2010	15:12
+FILE12			H	    3760	07.12.2010	12:06
+MAINFRM			CPP	   11621	07.03.2011	11:09
+MAINFRM			H	    1852	14.12.2010	15:17
+PCO_CDLG		H	    1507	14.12.2010	15:00
+PCO_CRYPTDLL		LIB	    2088	24.02.2011	16:41
+PCO_CRYPTDLL64		LIB	    2086	24.02.2011	16:41
+README			TXT	    6013	16.04.2009	15:27
+RESOURCE		H	     919	14.12.2010	15:07
+STDAFX			CPP	     205	13.03.2009	09:12
+STDAFX			H	    3302	14.12.2010	15:08
+TEST_CVDLG		CPP	    3830	14.12.2010	15:17
+TEST_CVDLG		H	     626	14.12.2010	15:17
+TEST_CVDLG		RC	    9958	14.12.2010	15:04
+TEST_CVDLG		SLN	    1239	09.12.2010	11:43
+TEST_CVDLG		VCPROJ	   10787	27.03.2013	08:28
+
+sample/Test_cvDialog/res:
+TEST_CVDLG		ICO	    1078	20.05.2010	15:56
+TEST_CVDLG		MANIFEST	     740	13.12.2010	16:31
+TEST_CVDLG		RC2	     452	13.03.2009	09:12
+TEST_CVDLG32		MANIFEST	     744	14.12.2010	17:20
+TOOLBAR			BMP	     598	09.12.2005	10:44
+
+Installation Instructions:
+
+Copy the SW_SCDPSDKWIN_600_06.zip to a distinct directory (e.g. PCOSDK). 
+
+1.  Select above directory ( e.g. 'PCOSDK').
+2.  Unzip the files to a directory of your choice: e.g. c:\pcosdk\include
+3.  Start 'SW_SCDPSDKWIN_600_06.exe'
+4.  Follow the steps in the setup dialog.
+
+VERSION HISTORY:
+Version 6.00_0001:
+- sdk fixes (missing files, wrong vcproj settings)
+
+Version 6.00:
+- New release
+
+KNOWN BUGS:
+
+Installation problems:
+
+If you run into problems during the installation you could delete the 
+following directory and its contents (if existent):
+C:\program files\installshield installation information\{4A30B691-D148-4C22-81FF-9ADDA6CF9AC6}
+'C:\program files\' depends on your sytem and might be different.
+
+ PCO AG
+ DONAUPARK 11
+ 93309 KELHEIM / GERMANY
+ PHONE +49 (9441) 20050
+ FAX   +49 (9441) 200520
+ info@pco.de, support@pco.de
+ http://www.pco.de
+
+PCO-TECH Inc.
+6930 Metroplex Drive
+Romulus, MI 48174
+Tel  248 276 8820 x242
+Fax  248-276-8825
+
+-------------------------------------------------------------------
+ DISCLAIMER
+ THE ORIGIN OF THIS INFORMATION MAY BE INTERNAL OR EXTERNAL TO PCO.
+ PCO MAKES EVERY EFFORT WITHIN ITS MEANS TO VERIFY THIS INFORMATION.
+ HOWEVER, THE INFORMATION PROVIDED IN THIS DOCUMENT IS FOR YOUR
+ INFORMATION ONLY. PCO MAKES NO EXPLICIT OR IMPLIED CLAIMS TO THE
+ VALIDITY OF THIS INFORMATION.
+-------------------------------------------------------------------
+ Any trademarks referenced in this document are the property of
+ their respective owners.
+-------------------------------------------------------------------
+

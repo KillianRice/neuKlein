@@ -1,0 +1,122 @@
+;; PCO540.inf
+
+[Version]
+Signature="$WINDOWS NT$"
+Provider=%ProviderName%
+DriverVer=03/20/2013,2.01.00.07
+CatalogFile=pco540.cat
+
+Class=PCO_Cameras
+ClassGUID={FCA83592-282C-4ef2-BDB6-0C332BCF9F03}
+
+[DestinationDirs]
+DefaultDestDir = 11
+pco540_Inst_CoInstaller_CopyFiles = 11
+pco540_DriverFiles = 12
+pco540_Files_WOW64 = 16425
+
+; ================= Class section =====================
+
+[ClassInstall32]
+CopyFiles=PCO_Class_Files
+Addreg=Class_AddReg     
+
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Installer32,,"pco_ci2.dll,ClassInstaller"
+HKR,,Icon,,"101"
+;HKR,,DeviceCharacteristics,0x10001,0x100     ;Use same security checks on relative opens
+;HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)" ;Allow generic all access to system and built-in Admin. 
+
+[PCO_Class_Files]
+pco_ci2.dll
+
+
+; ================= Device Install section =====================
+
+[ControlFlags]
+ExcludeFromSelect=PCI\VEN_10E8&DEV_82ED&SUBSYS_00000000
+
+
+[Manufacturer]
+%MfgName%=PCOMfg,NTAMD64
+
+[SourceDisksFiles]
+pco540.sys=1
+pco_ci2.dll=1
+pf_cam.dll=1
+pccam.dll=1
+pf_cam.w32=1
+pccam.w32=1
+
+
+[SourceDisksNames]
+1=%DISK_NAME%,
+
+
+[PCOMfg.NTAMD64]
+%DeviceDesc%=pco540_Inst,PCI\VEN_10E8&DEV_82ED&SUBSYS_00000000
+
+[pco540_Inst.NT]
+CopyFiles=pco540_DriverFiles,pco540_Files_DLL,pco540_Files_WOW64
+
+[pco540_Files_DLL]
+pf_cam.dll
+pccam.dll
+
+[pco540_Files_WOW64]
+pf_cam.dll, pf_cam.w32
+pccam.dll, pccam.w32
+
+
+[pco540_DriverFiles]
+pco540.sys
+
+[pco540_Inst.NT.Services]
+AddService=pco540,0x00000002,pco540_Service 
+
+[pco540_Service]
+DisplayName    = %SvcDesc%                            
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\pco540.sys                            
+AddReg         = pco540_Parameters_AddReg
+
+[pco540_Parameters_AddReg]
+;HKR, Parameters\Wdf, VerboseOn,       0x00010001, 1
+;HKR, Parameters\Wdf, VerifierOn,      0x00010001, 1
+;HKR, Parameters\Wdf, DbgBreakOnError, 0x00010001, 1
+HKR, Parameters, progmode, 0x00010001, 0
+
+
+;-------------- pco540 Coinstaller installation
+[pco540_Inst.NT.CoInstallers]
+AddReg=pco540_Inst_CoInstaller_AddReg
+CopyFiles=pco540_Inst_CoInstaller_CopyFiles
+
+[pco540_Inst_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01007.dll,WdfCoInstaller"
+
+[pco540_Inst_CoInstaller_CopyFiles]
+WdfCoInstaller01007.dll
+
+[SourceDisksFiles]
+WdfCoInstaller01007.dll=1 
+
+[pco540_Inst.NT.Wdf]
+KmdfService = pco540, pco540_wdfsect
+[pco540_wdfsect]
+KmdfLibraryVersion = 1.7
+
+[Strings]
+ProviderName="PCO AG"
+MfgName="PCO AG"
+DeviceDesc="pco540"
+DeviceClassName="PCO cameras"
+SvcDesc="PCO540 PCI-Adapter"
+DISK_NAME="PCO AG - Installation Disk"
+
+
+

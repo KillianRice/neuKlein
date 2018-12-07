@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\PCO\SensiCam 0]
+"SensiMod"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\PCO\Camera Settings\FAST]
+"Mode"=dword:00000003

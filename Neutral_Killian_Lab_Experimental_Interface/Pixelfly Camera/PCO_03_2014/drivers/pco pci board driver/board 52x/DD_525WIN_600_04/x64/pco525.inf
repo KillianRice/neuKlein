@@ -1,0 +1,121 @@
+;; PCO525.inf
+
+[Version]
+Signature="$WINDOWS NT$"
+Provider=%ProviderName%
+DriverVer=06/10/2011,6.00.00.04
+CatalogFile=pco525.cat
+
+Class=PCO_Cameras
+ClassGUID={FCA83592-282C-4ef2-BDB6-0C332BCF9F03}
+
+[DestinationDirs]
+DefaultDestDir = 11
+pco525_Inst_CoInstaller_CopyFiles = 11
+pco525_DriverFiles=12
+pco525_Files_WOW64	= 16425
+pco525_Bitfile=16419,\pco\sensicam
+
+; ================= Class section =====================
+
+[ClassInstall32]
+CopyFiles=PCO_Class_Files
+Addreg=Class_AddReg     
+
+
+[Class_AddReg]
+HKR,,,,%DeviceClassName%
+HKR,,Installer32,,"pco_ci2.dll,ClassInstaller"
+HKR,,Icon,,"101"
+;HKR,,DeviceCharacteristics,0x10001,0x100     ;Use same security checks on relative opens
+;HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)" ;Allow generic all access to system and built-in Admin. 
+
+[PCO_Class_Files]
+pco_ci2.dll
+
+
+; ================= Device Install section =====================
+
+[ControlFlags]
+ExcludeFromSelect=PCI\VEN_10E8&DEV_82EE&SUBSYS_00000000
+
+
+[Manufacturer]
+%MfgName%=PCOMfg,NTAMD64
+
+[SourceDisksFiles]
+pco525.sys=1
+pco_ci2.dll=1
+sen_cam.dll=1
+sen_cam.w32=1
+PB525002.BIT=1
+
+[SourceDisksNames]
+1=%DISK_NAME%,
+
+
+[PCOMfg.NTAMD64]
+%DeviceDesc%=pco525_Inst,PCI\VEN_10E8&DEV_82EE&SUBSYS_00000000
+
+[pco525_Inst.NT]
+CopyFiles=pco525_DriverFiles,pco525_Bitfile,pco525_Files_DLL,pco525_Files_WOW64
+
+[pco525_Files_DLL]
+sen_cam.dll
+
+[pco525_Files_WOW64]
+sen_cam.dll, sen_cam.w32
+
+
+[pco525_DriverFiles]
+pco525.sys
+
+[pco525_Bitfile]
+PB525002.BIT
+
+[pco525_Inst.NT.Services]
+AddService=pco525,0x00000002,pco525_Service 
+
+[pco525_Service]
+DisplayName    = %SvcDesc%                            
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\pco525.sys                            
+AddReg         = pco525_Parameters_AddReg
+
+[pco525_Parameters_AddReg]
+HKR, Parameters\Wdf, VerboseOn,       0x00010001, 1
+HKR, Parameters\Wdf, VerifierOn,      0x00010001, 1
+HKR, Parameters\Wdf, DbgBreakOnError, 0x00010001, 1
+
+
+;-------------- pco525 Coinstaller installation
+[pco525_Inst.NT.CoInstallers]
+AddReg=pco525_Inst_CoInstaller_AddReg
+CopyFiles=pco525_Inst_CoInstaller_CopyFiles
+
+[pco525_Inst_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01007.dll,WdfCoInstaller"
+
+[pco525_Inst_CoInstaller_CopyFiles]
+WdfCoInstaller01007.dll
+
+[SourceDisksFiles]
+WdfCoInstaller01007.dll=1 
+
+[pco525_Inst.NT.Wdf]
+KmdfService = pco525, pco525_wdfsect
+[pco525_wdfsect]
+KmdfLibraryVersion = 1.7
+
+[Strings]
+ProviderName="PCO AG"
+MfgName="PCO AG"
+DeviceDesc="pco525"
+DeviceClassName="PCO cameras"
+SvcDesc="PCO525 PCI-adapter"
+DISK_NAME="PCO AG - Installation Disk"
+
+
+

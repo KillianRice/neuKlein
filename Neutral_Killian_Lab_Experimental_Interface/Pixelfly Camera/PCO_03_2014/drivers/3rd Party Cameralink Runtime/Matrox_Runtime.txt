@@ -1,0 +1,30 @@
+-------------------------------------------------------------------
+                P C O  AG
+     TECHNICAL  INFORMATION  DOCUMENT
+-------------------------------------------------------------------
+
+README FOR CAMERALINK FRAME GRABBER DRIVER INSTALLATION:  
+
+Since the runtime package of the Matrox frame grabber is rather big,
+please contact our support for ftp access in order to download the
+necessary files.
+
+-------------------------------------------------------------------
+ PCO AG
+ DONAUPARK 11
+ 93309 KELHEIM / GERMANY
+ PHONE +49 (9441) 20050
+ FAX   +49 (9441) 200520
+ info@pco.de, support@pco.de
+ http://www.pco.de
+-------------------------------------------------------------------
+ DISCLAIMER
+ THE ORIGIN OF THIS INFORMATION MAY BE INTERNAL OR EXTERNAL TO PCO.
+ PCO MAKES EVERY EFFORT WITHIN ITS MEANS TO VERIFY THIS INFORMATION.
+ HOWEVER, THE INFORMATION PROVIDED IN THIS DOCUMENT IS FOR YOUR
+ INFORMATION ONLY. PCO MAKES NO EXPLICIT OR IMPLIED CLAIMS TO THE
+ VALIDITY OF THIS INFORMATION.
+-------------------------------------------------------------------
+ Any trademarks referenced in this document are the property of
+ their respective owners.
+-------------------------------------------------------------------

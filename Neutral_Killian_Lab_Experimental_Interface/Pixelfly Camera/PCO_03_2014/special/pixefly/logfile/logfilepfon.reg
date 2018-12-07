@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Pccam\Parameters]
+"Startlog"=hex:01,00,00,00
+"Logfile"="c:\\windows\\temp\\pccamdrv.log"
+

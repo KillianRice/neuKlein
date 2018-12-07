@@ -1,0 +1,2 @@
+2017.02.24
+Downloaded the zip folder PCO_03_2014 from PCO's website which included v201 of their 64bit (and 32bit) PCI driver for the pixelfly for use in win 7. Additionally, I had to download the 64bit library for labview which is located in SW_PFLABVIEWWIN_200.

@@ -1,0 +1,48 @@
+-------------------------------------------------------------------
+                 P C O  AG
+     TECHNICAL  INFORMATION  DOCUMENT
+-------------------------------------------------------------------
+
+To update, change a device driver or to install after an abort:
+
+1. Open Device Manager. 
+2. Double-click the type of device you want to update or change.
+   If you have previously pressed the abort button
+   during the automatic hardware installation you might find the 
+   device under 'Unknown device' with a yellow question mark.
+   If you have previously installed the driver correctly, you
+   will find the device under Multi Media Devices. 
+3. Right-click the specific device driver you want to update or
+   change, and then click Update Driver to open the Hardware 
+   Update Wizard. Or double click onto the device and click
+   Update Driver to open the hardware wizard.
+4. Follow the hardware wizard instructions. 
+
+You can open the device manager by clicking on Start and Control
+Panel. Double click on System and open the Hardware tab. Then open
+the device manager by clicking on the corresponding button.
+You have to be logged on as administrator or a member of the administrator
+group in order to complete the installation.
+
+For further information press the F1 button, while you are running the
+Device Manager, on your keyboard.
+
+-------------------------------------------------------------------
+ PCO AG
+ DONAUPARK 11
+ 93309 KELHEIM / GERMANY
+ PHONE +49 (9441) 20050
+ FAX   +49 (9441) 200520
+ info@pco.de, support@pco.de
+ http://www.pco.de
+-------------------------------------------------------------------
+ DISCLAIMER
+ THE ORIGIN OF THIS INFORMATION MAY BE INTERNAL OR EXTERNAL TO PCO.
+ PCO MAKES EVERY EFFORT WITHIN ITS MEANS TO VERIFY THIS INFORMATION.
+ HOWEVER, THE INFORMATION PROVIDED IN THIS DOCUMENT IS FOR YOUR
+ INFORMATION ONLY. PCO MAKES NO EXPLICIT OR IMPLIED CLAIMS TO THE
+ VALIDITY OF THIS INFORMATION.
+-------------------------------------------------------------------
+ Any trademarks referenced in this document are the property of
+ their respective owners.
+-------------------------------------------------------------------

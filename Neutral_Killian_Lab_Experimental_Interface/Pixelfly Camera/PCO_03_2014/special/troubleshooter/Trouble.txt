@@ -1,0 +1,18 @@
+SensiCam logfile created 02.05.2006 13:30.28
+
+BOARDVAL struct allocated for board 0
+board 0 gets board handle 84
+GET_PROTO: Cannot communicate with vxd
+First INIT_BOARD done successfull board: dd80
+file load size 69972 data 0
+IOCTL_RELOAD_FPGA: *data f00f0900
+stat e4b6 ccd:54 ele:100
+stat e4e0 ccd:96 ele:100
+ccd-temperature test failed ccd:96 
+
+ GET_PROTO: Cannot communicate with vxd
+ GET_PROTO: Cannot communicate with vxd
+FREE_BOARD in driver successfull, close driver
+driver closed, invalidate Handle and free BOARDVAL struct
+SensiCam logfile ended 13:30.30
+

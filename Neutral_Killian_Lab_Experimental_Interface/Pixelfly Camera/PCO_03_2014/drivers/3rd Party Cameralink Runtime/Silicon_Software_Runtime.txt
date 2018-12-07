@@ -1,0 +1,34 @@
+-------------------------------------------------------------------
+                P C O  AG
+     TECHNICAL  INFORMATION  DOCUMENT
+-------------------------------------------------------------------
+
+README FOR CAMERALINK FRAME GRABBER DRIVER INSTALLATION:  
+
+Please download the runtime package from the Silicon Software website.
+
+Siso Runtime 32bit:
+http://www.siliconsoftware.de/download/systemsoftware/microEnable/RuntimeSetup_v5.2.1_Win32.exe
+
+Siso Runtime 64bit:
+http://www.siliconsoftware.de/download/systemsoftware/microEnable/RuntimeSetup_v5.2.1_Win64.exe
+
+-------------------------------------------------------------------
+ PCO AG
+ DONAUPARK 11
+ 93309 KELHEIM / GERMANY
+ PHONE +49 (9441) 20050
+ FAX   +49 (9441) 200520
+ info@pco.de, support@pco.de
+ http://www.pco.de
+-------------------------------------------------------------------
+ DISCLAIMER
+ THE ORIGIN OF THIS INFORMATION MAY BE INTERNAL OR EXTERNAL TO PCO.
+ PCO MAKES EVERY EFFORT WITHIN ITS MEANS TO VERIFY THIS INFORMATION.
+ HOWEVER, THE INFORMATION PROVIDED IN THIS DOCUMENT IS FOR YOUR
+ INFORMATION ONLY. PCO MAKES NO EXPLICIT OR IMPLIED CLAIMS TO THE
+ VALIDITY OF THIS INFORMATION.
+-------------------------------------------------------------------
+ Any trademarks referenced in this document are the property of
+ their respective owners.
+-------------------------------------------------------------------
