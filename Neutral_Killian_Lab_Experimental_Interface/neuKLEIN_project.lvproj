@@ -225,9 +225,14 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVCursorListTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVCursorListTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="MD5Checksum core.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum core.vi"/>
+				<Item Name="MD5Checksum File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum File.vi"/>
+				<Item Name="MD5Checksum format message-digest.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum format message-digest.vi"/>
+				<Item Name="MD5Checksum pad.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum pad.vi"/>
 				<Item Name="New Zip File.vi" Type="VI" URL="/&lt;vilib&gt;/zip/New Zip File.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -366,6 +371,7 @@
 			<Item Name="get parameters.vi" Type="VI" URL="../Pixelfly Camera/SW_PFLABVIEWWIN_200/32bit_runtime/PixelFly_Labview_Adapter_2.00.llb/get parameters.vi"/>
 			<Item Name="Get sizes.vi" Type="VI" URL="../Pixelfly Camera/SW_PFLABVIEWWIN_200/32bit_runtime/PixelFly_Labview_Adapter_2.00.llb/Get sizes.vi"/>
 			<Item Name="get_pico_rapid_data.vi" Type="VI" URL="../PicoScope/get_pico_rapid_data.vi"/>
+			<Item Name="get_spnial_column_MD5.vi" Type="VI" URL="../neuKLEIN_Library/get_spnial_column_MD5.vi"/>
 			<Item Name="GetControlsAndIndicatorNames.vi" Type="VI" URL="../neuKLEIN_Library/GetControlsAndIndicatorNames.vi"/>
 			<Item Name="GetLastChar.vi" Type="VI" URL="../testing ground/RydbergExpControl/GetLastChar.vi"/>
 			<Item Name="getSampleRate.vi" Type="VI" URL="../6733_Red_MOT/getSampleRate.vi"/>
